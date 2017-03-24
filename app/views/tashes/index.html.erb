@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tashes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tashes.each do |tash| %>
+      <tr>
+        <td><%= tash.content %></td>
+        <td><%= link_to 'Show', tash %></td>
+        <td><%= link_to 'Edit', edit_tash_path(tash) %></td>
+        <td><%= link_to 'Destroy', tash, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tash', new_tash_path %>

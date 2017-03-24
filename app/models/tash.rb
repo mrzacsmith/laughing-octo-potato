@@ -1,0 +1,2 @@
+class Tash < ApplicationRecord
+end

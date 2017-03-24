@@ -1,0 +1,2 @@
+module TashesHelper
+end
